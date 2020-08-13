@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Primer Proyecto GIT</title>
 </head>
 <body>
-    <p>git checkout -b Development</p>
-    <p>git branch -D Development</p>
-    <h1>gitk</h1>
-    <h3>Martin Alejandro Tecún Charles 2016228</h3>
+    <h1>Martín Alejandro Tecún Charles - 20181518</h1>
+    <h2>Centro Educativo Técnico Laboral KINAL</h2>
+
+    <form>
+        <label for="number1">Ingrese el primer número</label>
+        <input type="text" id="num1"><br>
+
+        <label for="number2">Ingrese el segundo número</label>
+        <input type="text" id="num2"><br>
+
+        <input type="button" onclick="suma()" value="Operar ->"><br>
+        <label for="resultado">La respuesta es:</label>
+        <input type="text" id="num3"><br>
+    </form>
+
+    <script>
+        var n1, n2, result;
+        
+        function suma(){
+            n1 = num1.value * 1; 
+            n2 = num2.value * 1;
+            result = n1 + n2;
+            num3.value = result
+        }    
+    </script>
+
 </body>
 </html>
